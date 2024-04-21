@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sait</title>
+<link href="pictures/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+</head>
+<style>
+   a { cursor: url(pictures/pointer.cur), default; }
+    a {
+    outline: none; 
+   }
+ </style>               
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="dropdown-menu.css" media="screen" rel="stylesheet" type="text/css" />
+ <body style="margin:0;">
+ <div style="height: 140px;width: 100%;background: url('pictures/crysis_.jpg');">
+  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Filter Image View Using jQuery| Webstuffshare.com</title>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+		<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+		<script type="text/javascript">
+
+		    $(document).ready(function () {
+
+		        $('.menu li a').click(function () {
+
+
+		            $('.menu li').removeClass('selected');
+		            $(this).parent('li').addClass('selected');
+
+		            thisItem = $(this).attr('rel');
+
+		            if (thisItem != "all") {
+
+		                $('.item li[rel=' + thisItem + ']').stop()
+																.animate({ 'width': '110px',
+																    'opacity': 1,
+																    'marginRight': '.0em',
+																    'marginLeft': '.0em'
+																});
+
+		                $('.item li[rel!=' + thisItem + ']').stop()
+																.animate({ 'width': 0,
+																    'opacity': 0,
+																    'marginRight': 0,
+																    'marginLeft': 0
+																});
+		            } else {
+
+		                $('.item li').stop()
+										.animate({ 'opacity': 1,
+										    'width': '110px',
+										    'marginRight': '.0em',
+										    'marginLeft': '.0em'
+										});
+		            }
+		        })
+
+		        $('.item li img').animate({ 'opacity': 0.5 }).hover(function () {
+		            $(this).animate({ 'opacity': 1 });
+		        }, function () {
+		            $(this).animate({ 'opacity': 0.5 });
+		        });
+
+		    });
+			
+		</script>
+<div id="container">
+	
+	<ul class="item">
+   
+		<li rel="jquery"><a href="12-E/Starter.html" ><img src="pictures/1 cajt.jpg" border=none; /></a></li>
+   </ul>
+</div>
+</div>
+ <ul id="navigation" class="nav-main">
+	<li><a href="Головна.html">Головна</a></li>
+    <li><a href="HTMLPage12.htm">Тест</a></li>
+    <li class="list"><a href="#">Частини ПК</a>
+	<ul class="nav-sub">
+    <li><a href="Центральний процесор.htm">Центральний процесор</a></li>
+		<li><a href="Пристрої введеннявиведення.htm">Пристрої вве/виведення</a></li>
+		<li><a href="Як працює комп’ютер.htm">Як працює комп’ютер</a></li>
+		<li><a href="Пам'ять ПК.html">Пам'ять ПК</a></li>
+        <li><a href="Blok.htm">Блок-схема роботи ПК</a></li>
+        <li><a href="Motherboard.html">Материнська плата</a></li>
+		</ul>
+	</li>
+    
+    <li class="list"><a href="#">Пам'ять ПК</a>
+	<ul class="nav-sub">
+    <li><a href="HDD.htm">HDD</a></li>
+ 		<li><a href="FDD.htm">FDD</a></li>
+		<li><a href="CD.htm">CD</a></li>
+        <li><a href="DVD.htm">DVD</a></li>
+        <li><a href="флеш память.htm">флеш память</a></li>
+        <li><a href="RAM.htm">RAM</a></li>
+        <li><a href="ROM.htm">ROM</a></li>
+        <li><a href="CMOS.htm">CMOS</a></li>
+        <li><a href="кеш память.htm">кеш память</a></li>
+	</ul>
+	    <li class="list"><a href="#">Пристрої ПК</a>
+	<ul class="nav-sub">
+    <li><a href="BIOS.htm">BIOS</a></li>
+ 		<li><a href="Advanced Technology Extended.htm">Живлення процесора</a></li>
+		<li><a href="Peripheral component interconnect.htm">PCI слоти</a></li>
+        <li><a href="Processor.htm">Процесор</a></li>
+        <li><a href="video card.htm">Відеокарта</a></li>
+        <li><a href="North bridge.htm">Північний міст</a></li>
+        <li><a href="South bridge.htm">Південний міст</a></li>
+        <li><a href="Cool system.htm">Радіатори охолодження</a></li>
+        <li><a href="USB.htm">USB порти</a></li>
+        <li><a href="sound card.htm">Звукова карта</a></li>
+        </ul>
+        </li>
+     	</li>
+    </ul>
+ <br />
+        <div>
+       <br />
+   <center/>
+ <font face="Andy"size="+4" style="font-family: 'Comic Sans MS';  font-size: xx-large">Принципова схема комп’ютера</font>
+ <h3><p><font color="#DB3E42">
+           Всі комп’ютери, якими б вони не були за розмірами, від суперкомп’ютерів до найменшого офісного персональ-
+           ного комп’ютера, завжди мають три складові компоненти: пам’ять, центральний процесор та пристрої введен-
+           ня/виведення.
+             </p></font></h3>
+        </div>
+  <div>
+    <style>
+         body 
+         {
+  background: url(pictures/37591.jpg) no-repeat;
+    }
+  .semilayer 
+  {
+    margin: 0 auto; 
+    opacity: 0.7; 
+    filter: alpha(Opacity=70);
+    }
+  </style> 
+     <div class="semilayer">
+  <img src="pictures/Snimok.PNG" alt="Схема"/>
+  </div>
+    </div>
+      <center/>
+     <a href="http://lib.chdu.edu.ua/pdf/posibnuku/230/6.pdf" ><img src="pictures/Презентация1.jpg" border=none;></a>
+     </body>
+</html>
+   
+   

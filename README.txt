@@ -1,0 +1,1 @@
+Launch Advertisment.htm first to open website

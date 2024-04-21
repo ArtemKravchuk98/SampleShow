@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+    <style>
+   a { cursor: url(pictures/pointer.cur), pointer; }
+       a {
+    outline: none; /* Убираем границу вокруг ссылок  */
+   }
+  </style>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Filter Image View Using jQuery| Webstuffshare.com</title>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+		<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+		<script type="text/javascript">
+			
+			$(document).ready(function() {
+				
+				$('.menu li a').click(function() {
+					
+					
+					$('.menu li').removeClass('selected');
+					$(this).parent('li').addClass('selected');
+					
+					thisItem 	= $(this).attr('rel');
+					
+					if(thisItem != "all") {
+					
+						$('.item li[rel='+thisItem+']').stop()
+																.animate({'width' : '110px', 
+																			 'opacity' : 1, 
+																			 'marginRight' : '.5em', 
+																			 'marginLeft' : '.5em'
+																			});
+																			
+						$('.item li[rel!='+thisItem+']').stop()
+																.animate({'width' : 0, 
+																			 'opacity' : 0,
+																			 'marginRight' : 0, 
+																			 'marginLeft' : 0
+																			});
+					} else {
+						
+						$('.item li').stop()
+										.animate({'opacity' : 1, 
+													 'width' : '110px', 
+													 'marginRight' : '.5em', 
+													 'marginLeft' : '.5em'
+													});
+					}
+				})
+				
+				$('.item li img').animate({'opacity' : 0.5}).hover(function() {
+					$(this).animate({'opacity' : 1});
+				}, function() {
+					$(this).animate({'opacity' : 0.5});
+				});
+				
+			});
+			
+		</script>
+</head>
+<body>
+<div id="container">
+	
+	<ul class="item">
+   
+		<li rel="jquery"><a href="F:/Html/12-E/Starter.html"><img src="F:/Принципи роботи компютера/pictures/1 cajt.jpg" /></a></li>
+   </ul>
+	
+
+</body>
